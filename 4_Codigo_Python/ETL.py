@@ -143,7 +143,6 @@ def etapa_jonathan_validacion_final(df_original, df_limpio):
     else:
         print("⚠️ Advertencia: Revisar la limpieza, posible pérdida crítica de datos.")
 
-
 # ==========================================
 # BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
 # ==========================================
@@ -170,6 +169,20 @@ if __name__ == "__main__":
         # PASO 2.2: LLAMADA DE NICOLE ETAPA 2 (Descomentar cuando Nicole cree su función):
         # df_limpio_final = etapa_nicole_estandarizacion_texto(df_limpio_eu)
         
-        # Paso 2.3: Validación final a cargo de Jonathan
+        # Variable de control para definir qué DataFrame se exportará y validará
         # NOTA: Cambiar 'df_limpio_eu' por 'df_limpio_final' cuando Nicole integre su función.
-        etapa_jonathan_validacion_final(df_original, df_limpio_eu)
+        df_a_exportar = df_limpio_eu
+
+        # =====================================================================
+        # EXPORTACIÓN DEL DATASET PARA DESBLOQUEAR LA ETAPA 3
+        # =====================================================================
+        ruta_salida_limpia = os.path.join(directorio_actual, "..", "3_Tablas_Limpias")
+        os.makedirs(ruta_salida_limpia, exist_ok=True)
+        
+        RUTA_ARCHIVO_FINAL = os.path.join(ruta_salida_limpia, "dataset_limpio.csv")
+        df_a_exportar.to_csv(RUTA_ARCHIVO_FINAL, index=False)
+        print(f"\n✅ ¡Dataset generado con éxito! Guardado en: {os.path.abspath(RUTA_ARCHIVO_FINAL)}")
+        # =====================================================================
+        
+        # Paso 2.3: Validación final a cargo de Jonathan
+        etapa_jonathan_validacion_final(df_original, df_a_exportar)
