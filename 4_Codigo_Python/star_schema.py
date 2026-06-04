@@ -1,11 +1,11 @@
 import os
 import pandas as pd
 
-# ==========================================
-# ETAPA 3 - DISEÑO DEL STAR SCHEMA
-# ==========================================
+# =====================================================================
+# ETAPA 3: DISEÑO DEL STAR SCHEMA  &  ETAPA 4: CONSTRUCCIÓN DE DIMENSIONES
+# =====================================================================
 
-# --- RESPONSABLE: EU (DIMENSIONES DEMOGRÁFICAS) ---
+# --- RESPONSABLE: EU (ETAPAS 3 Y 4 - DIMENSIONES DEMOGRÁFICAS) ---
 def construir_dimensiones_demograficas(df_limpio):
     """Genera las tablas de dimensiones demográficas con sus respectivas claves primarias.
     
@@ -48,7 +48,7 @@ def construir_dimensiones_demograficas(df_limpio):
     return dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion
 
 
-# --- RESPONSABLE: JONATHAN (DIMENSIONES DE MARKETING) ---
+# --- RESPONSABLE: JONATHAN (ETAPAS 3 Y 4 - DIMENSIONES DE MARKETING) ---
 def construir_dimensiones_marketing(df_limpio):
     """Genera las tablas de dimensiones orientadas a marketing y publicidad.
     
@@ -82,10 +82,10 @@ def construir_dimensiones_marketing(df_limpio):
 
 
 # =====================================================================
-# ESPACIO RESERVADO PARA: NICOLE (RESPONSABLE PRINCIPAL ETAPA 3)
+# ESPACIO RESERVADO PARA: NICOLE (RESPONSABLE PRINCIPAL ETAPAS 3 Y 4)
 # =====================================================================
-# NICOLE: Aquí debes incluir la construcción de las dimensiones restantes
-# (ej. Dim_Snacks, Dim_Tiempo) y la construcción de la Tabla de Hechos (Fact Table).
+# NICOLE: Aquí debes incluir el diseño y construcción de las dimensiones 
+# restantes y la integración final de la Tabla de Hechos (Fact Table).
 # =====================================================================
 
 
@@ -105,6 +105,7 @@ if __name__ == "__main__":
         df_limpio = pd.read_csv(RUTA_DATASET_LIMPIO)
         print(f"Dataset limpio cargado correctamente. Registros a procesar: {len(df_limpio)}\n")
 
+        # Ejecución del pipeline de construcción (Etapa 4)
         # 1. Ejecución de tu parte (Eu)
         construir_dimensiones_demograficas(df_limpio)
         
