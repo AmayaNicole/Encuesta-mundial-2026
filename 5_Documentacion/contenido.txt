@@ -1,0 +1,21 @@
+├── 4_Documentacion/
+│   ├── StarSchema.png                 ← Eu
+│   ├── Diccionario_Datos.pdf          ← Nicole
+│   │
+│   └── Graficas/
+│       ├── grafico_genero.png         ← Eu
+│       ├── grafico_edad.png           ← Eu
+│       ├── grafico_departamentos.png  ← Eu
+│       ├── grafico_municipios.png     ← Eu
+│       │
+│       ├── grafico_frecuencia_consumo.png ← Nicole
+│       ├── grafico_lugar_compra.png       ← Nicole
+│       ├── grafico_snacks.png             ← Nicole
+│       ├── grafico_sabores.png            ← Nicole
+│       ├── grafico_presentacion.png       ← Nicole
+│       │
+│       ├── grafico_precio.png         ← Jonathan
+│       ├── grafico_selecciones.png    ← Jonathan
+│       ├── grafico_jugadores.png      ← Jonathan
+│       ├── grafico_promociones.png    ← Jonathan
+│       └── grafico_publicidad.png     ← Jonathan
