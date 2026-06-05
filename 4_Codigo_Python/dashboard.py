@@ -141,7 +141,65 @@ def generar_graficos_marketing(fact_encuestas):
 # - grafico_sabores.png
 # - grafico_presentacion.png
 # =====================================================================
+# --- RESPONSABLE: NICOLE ---
+def generar_graficos_consumo(df_datos):
+    
+    print("\n--- GENERANDO GRÁFICOS DE CONSUMO (Nicole) ---")
+    ruta_graficos = "1_Entregables/Graficos/"
+    os.makedirs(ruta_graficos, exist_ok=True)
 
+    # 1. grafico_frecuencia_consumo.png - Gráfico de Barras Verticales
+    plt.figure(figsize=(10, 6))
+    sns.countplot(data=df_datos, x="FrecuenciaConsumo", palette="Set3", order=df_datos["FrecuenciaConsumo"].value_counts().index)
+    plt.title("Frecuencia de Consumo de Snacks durante los Partidos", fontsize=14)
+    plt.xlabel("Frecuencia de Consumo")
+    plt.ylabel("Cantidad de Respuestas")
+    plt.xticks(rotation=15)
+    plt.savefig(os.path.join(ruta_graficos, "grafico_frecuencia_consumo.png"), bbox_inches='tight')
+    plt.close()
+    print("✅ grafico_frecuencia_consumo.png generado.")
+
+    # 2. grafico_lugar_compra.png - Gráfico de Barras Horizontales
+    plt.figure(figsize=(10, 6))
+    lugar_counts = df_datos["LugarCompra"].value_counts()
+    sns.barplot(x=lugar_counts.values, y=lugar_counts.index, palette="coolwarm")
+    plt.title("Lugares Preferidos para Comprar Snacks", fontsize=14)
+    plt.xlabel("Cantidad de Respuestas")
+    plt.ylabel("Lugar de Compra")
+    plt.savefig(os.path.join(ruta_graficos, "grafico_lugar_compra.png"), bbox_inches='tight')
+    plt.close()
+    print("✅ grafico_lugar_compra.png generado.")
+
+    # 3. grafico_snacks.png - Top Snacks Favoritos
+    plt.figure(figsize=(10, 6))
+    sns.countplot(data=df_datos, y="SnackFavorito", order=df_datos["SnackFavorito"].value_counts().index[:10], palette="cubehelix")
+    plt.title("Top 10 Snacks Favoritos para el Mundial", fontsize=14)
+    plt.xlabel("Cantidad de Respuestas")
+    plt.ylabel("Tipo de Snack")
+    plt.savefig(os.path.join(ruta_graficos, "grafico_snacks.png"), bbox_inches='tight')
+    plt.close()
+    print("✅ grafico_snacks.png generado.")
+
+    # 4. grafico_sabores.png - Distribución de Sabores (Gráfico de Pastel)
+    plt.figure(figsize=(8, 8))
+    df_datos["SaborPreferido"].value_counts().plot(
+        kind="pie", autopct="%1.1f%%", startangle=45, colors=sns.color_palette("Set2")
+    )
+    plt.title("Distribución de Sabores Preferidos", fontsize=14)
+    plt.ylabel("")  
+    plt.savefig(os.path.join(ruta_graficos, "grafico_sabores.png"), bbox_inches='tight')
+    plt.close()
+    print("✅ grafico_sabores.png generado.")
+
+    # 5. grafico_presentacion.png - Presentación Ideal
+    plt.figure(figsize=(10, 6))
+    sns.countplot(data=df_datos, x="PresentacionIdeal", palette="rocket", order=df_datos["PresentacionIdeal"].value_counts().index)
+    plt.title("Preferencia de Presentación Ideal del Producto", fontsize=14)
+    plt.xlabel("Tipo de Presentación")
+    plt.ylabel("Cantidad de Respuestas")
+    plt.savefig(os.path.join(ruta_graficos, "grafico_presentacion.png"), bbox_inches='tight')
+    plt.close()
+    print("✅ grafico_presentacion.png generado.")
 
 # ==========================================
 # BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
@@ -163,5 +221,5 @@ if __name__ == "__main__":
         # 2. Ejecución de la sección de Jonathan
         generar_graficos_marketing(df_limpio)
 
-        # 3. Flujo de Nicole (Descomentar al integrar)
-        # generar_graficos_consumo(df_limpio)
+        # 3. Ejecución de la sección de Nicole
+        generar_graficos_consumo(df_limpio)

@@ -1,0 +1,678 @@
+ID_Jugador,Jugador
+1,Kylian Mbappé; Cristiano Ronaldo; Neymar Jr.
+2,Cristiano Ronaldo; Kylian Mbappé; Christian Pulisic
+3,Cristiano Ronaldo; Federico Valverde
+4,Vinícius Júnior
+5,Kylian Mbappé
+6,Lionel Messi
+7,Cristiano Ronaldo; Lionel Messi; Julián Álvarez
+8,Lionel Messi; Neymar Jr.
+9,Cristiano Ronaldo; Rodri
+10,Neymar Jr.; Cristiano Ronaldo
+11,Cristiano Ronaldo
+12,Cristiano Ronaldo; Neymar Jr.
+13,Lionel Messi; Neymar Jr.; Kylian Mbappé
+14,Jude Bellingham; Cristiano Ronaldo
+15,Rodri; Alphonso Davies; Vinícius Júnior
+16,Neymar Jr.; Vinícius Júnior; Lionel Messi
+17,Julián Álvarez; Harry Kane
+18,Jude Bellingham
+19,Lionel Messi; Rodri; Harry Kane
+20,Lionel Messi; Cristiano Ronaldo; Neymar Jr.
+21,Vinícius Júnior; Lionel Messi; Christian Pulisic
+22,Neymar Jr.; Vinícius Júnior
+23,Lamine Yamal; Kylian Mbappé
+24,Lionel Messi; Jude Bellingham
+25,Ninguno
+26,Ninguno; Lionel Messi; Jude Bellingham
+27,Rodri
+28,Cristiano Ronaldo; Vinícius Júnior; Alphonso Davies
+29,Harry Kane; Rodri
+30,Christian Pulisic
+31,Lamine Yamal
+32,Federico Valverde
+33,Lionel Messi; Jude Bellingham; Vinícius Júnior
+34,Cristiano Ronaldo; Vinícius Júnior; Rodri
+35,Neymar Jr.; Julián Álvarez
+36,Neymar Jr.; Jude Bellingham
+37,Rodri; Jude Bellingham
+38,Ninguno; Lionel Messi; Vinícius Júnior
+39,Neymar Jr.
+40,Lionel Messi; Christian Pulisic; Neymar Jr.
+41,Lionel Messi; Cristiano Ronaldo
+42,Neymar Jr.; Jude Bellingham; Lamine Yamal
+43,Federico Valverde; Vinícius Júnior; Ninguno
+44,Lionel Messi; Neymar Jr.; Vinícius Júnior
+45,Neymar Jr.; Federico Valverde
+46,Neymar Jr.; Harry Kane; Lamine Yamal
+47,Kylian Mbappé; Neymar Jr.
+48,Julián Álvarez; Neymar Jr.
+49,Rodri; Cristiano Ronaldo
+50,Julián Álvarez; Cristiano Ronaldo
+51,Lionel Messi; Jude Bellingham; Cristiano Ronaldo
+52,Lionel Messi; Vinícius Júnior
+53,Lionel Messi; Kylian Mbappé
+54,Neymar Jr.; Lionel Messi
+55,Kylian Mbappé; Christian Pulisic
+56,Neymar Jr.; Kylian Mbappé
+57,Lionel Messi; Lamine Yamal; Harry Kane
+58,Lionel Messi; Ninguno
+59,Kylian Mbappé; Cristiano Ronaldo
+60,Lionel Messi; Federico Valverde; Vinícius Júnior
+61,Jude Bellingham; Lionel Messi; Lamine Yamal
+62,Harry Kane; Cristiano Ronaldo
+63,Neymar Jr.; Kylian Mbappé; Vinícius Júnior
+64,Kylian Mbappé; Jude Bellingham
+65,Christian Pulisic; Kylian Mbappé
+66,Cristiano Ronaldo; Lamine Yamal; Neymar Jr.
+67,Harry Kane; Cristiano Ronaldo; Vinícius Júnior
+68,Cristiano Ronaldo; Vinícius Júnior
+69,Cristiano Ronaldo; Neymar Jr.; Lamine Yamal
+70,Lionel Messi; Alphonso Davies; Neymar Jr.
+71,Vinícius Júnior; Federico Valverde
+72,Lionel Messi; Neymar Jr.; Cristiano Ronaldo
+73,Harry Kane; Lionel Messi
+74,Lamine Yamal; Lionel Messi; Kylian Mbappé
+75,Neymar Jr.; Cristiano Ronaldo; Federico Valverde
+76,Lamine Yamal; Vinícius Júnior
+77,Lionel Messi; Vinícius Júnior; Harry Kane
+78,Cristiano Ronaldo; Lamine Yamal
+79,Kylian Mbappé; Lionel Messi
+80,Julián Álvarez; Alphonso Davies
+81,Vinícius Júnior; Cristiano Ronaldo; Federico Valverde
+82,Jude Bellingham; Cristiano Ronaldo; Lamine Yamal
+83,Kylian Mbappé; Lionel Messi; Vinícius Júnior
+84,Neymar Jr.; Lamine Yamal
+85,Cristiano Ronaldo; Kylian Mbappé
+86,Neymar Jr.; Kylian Mbappé; Cristiano Ronaldo
+87,Federico Valverde; Harry Kane
+88,Julián Álvarez; Vinícius Júnior
+89,Vinícius Júnior; Julián Álvarez
+90,Vinícius Júnior; Ninguno
+91,Neymar Jr.; Jude Bellingham; Kylian Mbappé
+92,Lionel Messi; Christian Pulisic
+93,Lamine Yamal; Cristiano Ronaldo
+94,Harry Kane; Lamine Yamal
+95,Neymar Jr.; Christian Pulisic
+96,Kylian Mbappé; Cristiano Ronaldo; Lionel Messi
+97,Neymar Jr.; Lamine Yamal; Alphonso Davies
+98,Alphonso Davies; Lionel Messi; Lamine Yamal
+99,Lionel Messi; Cristiano Ronaldo; Vinícius Júnior
+100,Lionel Messi; Christian Pulisic; Vinícius Júnior
+101,Kylian Mbappé; Julián Álvarez
+102,Lamine Yamal; Neymar Jr.
+103,Vinícius Júnior; Cristiano Ronaldo
+104,Cristiano Ronaldo; Ninguno; Federico Valverde
+105,Kylian Mbappé; Vinícius Júnior
+106,Christian Pulisic; Cristiano Ronaldo
+107,Cristiano Ronaldo; Jude Bellingham
+108,Kylian Mbappé; Lamine Yamal
+109,Lionel Messi; Lamine Yamal; Kylian Mbappé
+110,Lionel Messi; Vinícius Júnior; Federico Valverde
+111,Christian Pulisic; Neymar Jr.
+112,Cristiano Ronaldo; Lionel Messi; Kylian Mbappé
+113,Jude Bellingham; Rodri
+114,Christian Pulisic; Cristiano Ronaldo; Lionel Messi
+115,Neymar Jr.; Lionel Messi; Christian Pulisic
+116,Vinícius Júnior; Lionel Messi; Cristiano Ronaldo
+117,Jude Bellingham; Cristiano Ronaldo; Kylian Mbappé
+118,Vinícius Júnior; Neymar Jr.; Kylian Mbappé
+119,Jude Bellingham; Neymar Jr.; Julián Álvarez
+120,Jude Bellingham; Alphonso Davies; Kylian Mbappé
+121,Kylian Mbappé; Harry Kane
+122,Cristiano Ronaldo; Federico Valverde; Vinícius Júnior
+123,Lionel Messi; Harry Kane; Neymar Jr.
+124,Neymar Jr.; Jude Bellingham; Lionel Messi
+125,Vinícius Júnior; Neymar Jr.
+126,Harry Kane; Vinícius Júnior; Cristiano Ronaldo
+127,Lamine Yamal; Federico Valverde
+128,Christian Pulisic; Cristiano Ronaldo; Federico Valverde
+129,Neymar Jr.; Lionel Messi; Cristiano Ronaldo
+130,Lamine Yamal; Jude Bellingham
+131,Vinícius Júnior; Lionel Messi; Kylian Mbappé
+132,Lionel Messi; Julián Álvarez; Lamine Yamal
+133,Lionel Messi; Jude Bellingham; Lamine Yamal
+134,Lionel Messi; Lamine Yamal; Christian Pulisic
+135,Cristiano Ronaldo; Lionel Messi
+136,Alphonso Davies; Lionel Messi
+137,Lionel Messi; Vinícius Júnior; Christian Pulisic
+138,Christian Pulisic; Harry Kane; Lamine Yamal
+139,Lamine Yamal; Cristiano Ronaldo; Vinícius Júnior
+140,Christian Pulisic; Lionel Messi
+141,Jude Bellingham; Federico Valverde
+142,Ninguno; Lamine Yamal; Kylian Mbappé
+143,Cristiano Ronaldo; Kylian Mbappé; Jude Bellingham
+144,Neymar Jr.; Alphonso Davies
+145,Vinícius Júnior; Christian Pulisic
+146,Lionel Messi; Federico Valverde
+147,Rodri; Christian Pulisic; Lamine Yamal
+148,Kylian Mbappé; Federico Valverde
+149,Cristiano Ronaldo; Lionel Messi; Harry Kane
+150,Rodri; Lionel Messi; Neymar Jr.
+151,Jude Bellingham; Lionel Messi; Kylian Mbappé
+152,Vinícius Júnior; Cristiano Ronaldo; Jude Bellingham
+153,Kylian Mbappé; Lionel Messi; Neymar Jr.
+154,Ninguno; Lamine Yamal
+155,Vinícius Júnior; Lionel Messi
+156,Cristiano Ronaldo; Vinícius Júnior; Neymar Jr.
+157,Neymar Jr.; Christian Pulisic; Cristiano Ronaldo
+158,Alphonso Davies; Federico Valverde; Cristiano Ronaldo
+159,Vinícius Júnior; Lamine Yamal
+160,Lionel Messi; Vinícius Júnior; Jude Bellingham
+161,Cristiano Ronaldo; Lionel Messi; Federico Valverde
+162,Kylian Mbappé; Cristiano Ronaldo; Jude Bellingham
+163,Lamine Yamal; Ninguno; Vinícius Júnior
+164,Cristiano Ronaldo; Harry Kane
+165,Alphonso Davies
+166,Lionel Messi; Alphonso Davies; Lamine Yamal
+167,Jude Bellingham; Cristiano Ronaldo; Lionel Messi
+168,Cristiano Ronaldo; Ninguno
+169,Alphonso Davies; Vinícius Júnior; Kylian Mbappé
+170,Lionel Messi; Harry Kane
+171,Harry Kane; Vinícius Júnior; Lamine Yamal
+172,Vinícius Júnior; Ninguno; Jude Bellingham
+173,Harry Kane
+174,Vinícius Júnior; Cristiano Ronaldo; Christian Pulisic
+175,Neymar Jr.; Julián Álvarez; Lamine Yamal
+176,Vinícius Júnior; Harry Kane; Kylian Mbappé
+177,Lamine Yamal; Christian Pulisic
+178,Neymar Jr.; Lionel Messi; Kylian Mbappé
+179,Cristiano Ronaldo; Julián Álvarez; Kylian Mbappé
+180,Kylian Mbappé; Cristiano Ronaldo; Vinícius Júnior
+181,Rodri; Alphonso Davies
+182,Julián Álvarez
+183,Cristiano Ronaldo; Neymar Jr.; Lionel Messi
+184,Lamine Yamal; Cristiano Ronaldo; Julián Álvarez
+185,Alphonso Davies; Christian Pulisic; Cristiano Ronaldo
+186,Harry Kane; Lionel Messi; Lamine Yamal
+187,Neymar Jr.; Lionel Messi; Vinícius Júnior
+188,Neymar Jr.; Vinícius Júnior; Cristiano Ronaldo
+189,Kylian Mbappé; Lionel Messi; Cristiano Ronaldo
+190,Lionel Messi; Julián Álvarez; Cristiano Ronaldo
+191,Vinícius Júnior; Harry Kane
+192,Federico Valverde; Lionel Messi
+193,Julián Álvarez; Lionel Messi; Vinícius Júnior
+194,Kylian Mbappé; Lionel Messi; Alphonso Davies
+195,Christian Pulisic; Cristiano Ronaldo; Rodri
+196,Rodri; Kylian Mbappé
+197,Vinícius Júnior; Cristiano Ronaldo; Neymar Jr.
+198,Kylian Mbappé; Ninguno; Neymar Jr.
+199,Federico Valverde; Lionel Messi; Cristiano Ronaldo
+200,Federico Valverde; Neymar Jr.
+201,Lionel Messi; Alphonso Davies
+202,Kylian Mbappé; Cristiano Ronaldo; Ninguno
+203,Kylian Mbappé; Alphonso Davies
+204,Cristiano Ronaldo; Alphonso Davies; Jude Bellingham
+205,Lionel Messi; Vinícius Júnior; Alphonso Davies
+206,Christian Pulisic; Kylian Mbappé; Vinícius Júnior
+207,Julián Álvarez; Jude Bellingham
+208,Cristiano Ronaldo; Alphonso Davies
+209,Lamine Yamal; Lionel Messi
+210,Vinícius Júnior; Cristiano Ronaldo; Lionel Messi
+211,Lamine Yamal; Christian Pulisic; Lionel Messi
+212,Vinícius Júnior; Kylian Mbappé
+213,Jude Bellingham; Lionel Messi; Cristiano Ronaldo
+214,Lionel Messi; Julián Álvarez; Kylian Mbappé
+215,Vinícius Júnior; Cristiano Ronaldo; Harry Kane
+216,Lionel Messi; Rodri; Lamine Yamal
+217,Federico Valverde; Cristiano Ronaldo; Kylian Mbappé
+218,Vinícius Júnior; Lamine Yamal; Rodri
+219,Jude Bellingham; Lionel Messi
+220,Neymar Jr.; Jude Bellingham; Christian Pulisic
+221,Christian Pulisic; Lionel Messi; Lamine Yamal
+222,Jude Bellingham; Lamine Yamal
+223,Federico Valverde; Cristiano Ronaldo; Christian Pulisic
+224,Neymar Jr.; Cristiano Ronaldo; Lionel Messi
+225,Vinícius Júnior; Lamine Yamal; Cristiano Ronaldo
+226,Lamine Yamal; Lionel Messi; Cristiano Ronaldo
+227,Julián Álvarez; Christian Pulisic
+228,Kylian Mbappé; Julián Álvarez; Cristiano Ronaldo
+229,Vinícius Júnior; Alphonso Davies; Neymar Jr.
+230,Lamine Yamal; Harry Kane
+231,Julián Álvarez; Ninguno
+232,Lionel Messi; Julián Álvarez
+233,Cristiano Ronaldo; Julián Álvarez
+234,Christian Pulisic; Rodri
+235,Christian Pulisic; Jude Bellingham
+236,Cristiano Ronaldo; Alphonso Davies; Lionel Messi
+237,Lionel Messi; Neymar Jr.; Ninguno
+238,Neymar Jr.; Cristiano Ronaldo; Julián Álvarez
+239,Julián Álvarez; Federico Valverde; Neymar Jr.
+240,Neymar Jr.; Cristiano Ronaldo; Kylian Mbappé
+241,Lionel Messi; Jude Bellingham; Federico Valverde
+242,Lionel Messi; Harry Kane; Rodri
+243,Vinícius Júnior; Lionel Messi; Harry Kane
+244,Vinícius Júnior; Jude Bellingham; Neymar Jr.
+245,Federico Valverde; Kylian Mbappé; Lamine Yamal
+246,Federico Valverde; Christian Pulisic
+247,Ninguno; Neymar Jr.; Jude Bellingham
+248,Cristiano Ronaldo; Christian Pulisic
+249,Cristiano Ronaldo; Lionel Messi; Neymar Jr.
+250,Jude Bellingham; Neymar Jr.; Vinícius Júnior
+251,Lamine Yamal; Alphonso Davies; Cristiano Ronaldo
+252,Lamine Yamal; Kylian Mbappé; Lionel Messi
+253,Lionel Messi; Christian Pulisic; Cristiano Ronaldo
+254,Vinícius Júnior; Jude Bellingham
+255,Kylian Mbappé; Jude Bellingham; Lionel Messi
+256,Vinícius Júnior; Lamine Yamal; Lionel Messi
+257,Lionel Messi; Alphonso Davies; Cristiano Ronaldo
+258,Jude Bellingham; Vinícius Júnior; Alphonso Davies
+259,Alphonso Davies; Ninguno
+260,Rodri; Neymar Jr.; Jude Bellingham
+261,Alphonso Davies; Vinícius Júnior
+262,Vinícius Júnior; Lamine Yamal; Harry Kane
+263,Neymar Jr.; Lionel Messi; Julián Álvarez
+264,Cristiano Ronaldo; Vinícius Júnior; Kylian Mbappé
+265,Neymar Jr.; Cristiano Ronaldo; Jude Bellingham
+266,Jude Bellingham; Neymar Jr.
+267,Harry Kane; Cristiano Ronaldo; Lionel Messi
+268,Lionel Messi; Jude Bellingham; Kylian Mbappé
+269,Christian Pulisic; Lionel Messi; Harry Kane
+270,Lionel Messi; Julián Álvarez; Neymar Jr.
+271,Alphonso Davies; Kylian Mbappé; Vinícius Júnior
+272,Jude Bellingham; Julián Álvarez; Kylian Mbappé
+273,Federico Valverde; Lionel Messi; Rodri
+274,Jude Bellingham; Vinícius Júnior
+275,Ninguno; Christian Pulisic; Jude Bellingham
+276,Christian Pulisic; Federico Valverde
+277,Christian Pulisic; Neymar Jr.; Alphonso Davies
+278,Rodri; Alphonso Davies; Julián Álvarez
+279,Christian Pulisic; Ninguno
+280,Lamine Yamal; Ninguno
+281,Cristiano Ronaldo; Neymar Jr.; Kylian Mbappé
+282,Vinícius Júnior; Cristiano Ronaldo; Julián Álvarez
+283,Lionel Messi; Kylian Mbappé; Jude Bellingham
+284,Ninguno; Federico Valverde; Neymar Jr.
+285,Harry Kane; Federico Valverde; Kylian Mbappé
+286,Kylian Mbappé; Lionel Messi; Lamine Yamal
+287,Kylian Mbappé; Vinícius Júnior; Cristiano Ronaldo
+288,Alphonso Davies; Neymar Jr.; Julián Álvarez
+289,Federico Valverde; Cristiano Ronaldo
+290,Rodri; Federico Valverde; Neymar Jr.
+291,Rodri; Federico Valverde; Lionel Messi
+292,Lionel Messi; Christian Pulisic; Lamine Yamal
+293,Kylian Mbappé; Vinícius Júnior; Harry Kane
+294,Julián Álvarez; Lionel Messi
+295,Christian Pulisic; Vinícius Júnior
+296,Julián Álvarez; Kylian Mbappé; Lionel Messi
+297,Harry Kane; Rodri; Vinícius Júnior
+298,Lionel Messi; Cristiano Ronaldo; Alphonso Davies
+299,Alphonso Davies; Neymar Jr.
+300,Lamine Yamal; Jude Bellingham; Neymar Jr.
+301,Neymar Jr.; Lionel Messi; Harry Kane
+302,Alphonso Davies; Lionel Messi; Kylian Mbappé
+303,Lionel Messi; Lamine Yamal; Cristiano Ronaldo
+304,Vinícius Júnior; Cristiano Ronaldo; Alphonso Davies
+305,Jude Bellingham; Harry Kane
+306,Harry Kane; Neymar Jr.
+307,Julián Álvarez; Kylian Mbappé; Neymar Jr.
+308,Jude Bellingham; Vinícius Júnior; Cristiano Ronaldo
+309,Kylian Mbappé; Neymar Jr.; Jude Bellingham
+310,Lamine Yamal; Neymar Jr.; Vinícius Júnior
+311,Lionel Messi; Rodri; Neymar Jr.
+312,Cristiano Ronaldo; Harry Kane; Kylian Mbappé
+313,Jude Bellingham; Lionel Messi; Neymar Jr.
+314,Julián Álvarez; Neymar Jr.; Vinícius Júnior
+315,Julián Álvarez; Lionel Messi; Neymar Jr.
+316,Lionel Messi; Vinícius Júnior; Cristiano Ronaldo
+317,Lionel Messi; Christian Pulisic; Kylian Mbappé
+318,Kylian Mbappé; Neymar Jr.; Federico Valverde
+319,Kylian Mbappé; Neymar Jr.; Vinícius Júnior
+320,Harry Kane; Jude Bellingham
+321,Neymar Jr.; Alphonso Davies; Lionel Messi
+322,Julián Álvarez; Lamine Yamal
+323,Kylian Mbappé; Ninguno
+324,Kylian Mbappé; Alphonso Davies; Rodri
+325,Cristiano Ronaldo; Kylian Mbappé; Neymar Jr.
+326,Jude Bellingham; Kylian Mbappé; Lionel Messi
+327,Christian Pulisic; Vinícius Júnior; Neymar Jr.
+328,Alphonso Davies; Vinícius Júnior; Rodri
+329,Cristiano Ronaldo; Lionel Messi; Christian Pulisic
+330,Vinícius Júnior; Lionel Messi; Neymar Jr.
+331,Lionel Messi; Rodri; Jude Bellingham
+332,Cristiano Ronaldo; Christian Pulisic; Lionel Messi
+333,Christian Pulisic; Julián Álvarez
+334,Federico Valverde; Lamine Yamal; Kylian Mbappé
+335,Lionel Messi; Vinícius Júnior; Neymar Jr.
+336,Cristiano Ronaldo; Federico Valverde; Lamine Yamal
+337,Lionel Messi; Cristiano Ronaldo; Jude Bellingham
+338,Cristiano Ronaldo; Kylian Mbappé; Harry Kane
+339,Lionel Messi; Lamine Yamal
+340,Neymar Jr.; Julián Álvarez; Lionel Messi
+341,Neymar Jr.; Kylian Mbappé; Federico Valverde
+342,Lionel Messi; Kylian Mbappé; Julián Álvarez
+343,Cristiano Ronaldo; Christian Pulisic; Vinícius Júnior
+344,Julián Álvarez; Lamine Yamal; Jude Bellingham
+345,Jude Bellingham; Rodri; Cristiano Ronaldo
+346,Rodri; Neymar Jr.
+347,Neymar Jr.; Ninguno
+348,Alphonso Davies; Cristiano Ronaldo
+349,Kylian Mbappé; Rodri; Neymar Jr.
+350,Cristiano Ronaldo; Lionel Messi; Vinícius Júnior
+351,Cristiano Ronaldo; Lamine Yamal; Vinícius Júnior
+352,Lamine Yamal; Neymar Jr.; Lionel Messi
+353,Jude Bellingham; Lionel Messi; Christian Pulisic
+354,Lionel Messi; Kylian Mbappé; Cristiano Ronaldo
+355,Neymar Jr.; Christian Pulisic; Vinícius Júnior
+356,Julián Álvarez; Vinícius Júnior; Harry Kane
+357,Lionel Messi; Christian Pulisic; Federico Valverde
+358,Harry Kane; Neymar Jr.; Cristiano Ronaldo
+359,Harry Kane; Ninguno
+360,Federico Valverde; Lamine Yamal
+361,Rodri; Kylian Mbappé; Lionel Messi
+362,Lionel Messi; Rodri
+363,Rodri; Lionel Messi
+364,Jude Bellingham; Christian Pulisic
+365,Cristiano Ronaldo; Federico Valverde; Neymar Jr.
+366,Cristiano Ronaldo; Vinícius Júnior; Julián Álvarez
+367,Ninguno; Lionel Messi; Christian Pulisic
+368,Neymar Jr.; Ninguno; Vinícius Júnior
+369,Jude Bellingham; Ninguno; Julián Álvarez
+370,Vinícius Júnior; Lamine Yamal; Kylian Mbappé
+371,Alphonso Davies; Lionel Messi; Cristiano Ronaldo
+372,Lamine Yamal; Cristiano Ronaldo; Federico Valverde
+373,Vinícius Júnior; Neymar Jr.; Cristiano Ronaldo
+374,Federico Valverde; Lionel Messi; Lamine Yamal
+375,Ninguno; Neymar Jr.
+376,Cristiano Ronaldo; Neymar Jr.; Julián Álvarez
+377,Kylian Mbappé; Lamine Yamal; Rodri
+378,Kylian Mbappé; Vinícius Júnior; Alphonso Davies
+379,Lionel Messi; Jude Bellingham; Julián Álvarez
+380,Neymar Jr.; Alphonso Davies; Cristiano Ronaldo
+381,Vinícius Júnior; Rodri; Julián Álvarez
+382,Lionel Messi; Cristiano Ronaldo; Lamine Yamal
+383,Vinícius Júnior; Kylian Mbappé; Lionel Messi
+384,Cristiano Ronaldo; Harry Kane; Lamine Yamal
+385,Lamine Yamal; Federico Valverde; Neymar Jr.
+386,Neymar Jr.; Cristiano Ronaldo; Lamine Yamal
+387,Kylian Mbappé; Neymar Jr.; Cristiano Ronaldo
+388,Cristiano Ronaldo; Julián Álvarez; Jude Bellingham
+389,Kylian Mbappé; Neymar Jr.; Lionel Messi
+390,Alphonso Davies; Federico Valverde; Lionel Messi
+391,Lionel Messi; Kylian Mbappé; Federico Valverde
+392,Neymar Jr.; Lamine Yamal; Jude Bellingham
+393,Julián Álvarez; Vinícius Júnior; Lionel Messi
+394,Kylian Mbappé; Lionel Messi; Jude Bellingham
+395,Jude Bellingham; Cristiano Ronaldo; Vinícius Júnior
+396,Lionel Messi; Neymar Jr.; Lamine Yamal
+397,Federico Valverde; Vinícius Júnior
+398,Lamine Yamal; Lionel Messi; Neymar Jr.
+399,Lionel Messi; Jude Bellingham; Ninguno
+400,Vinícius Júnior; Jude Bellingham; Kylian Mbappé
+401,Cristiano Ronaldo; Kylian Mbappé; Alphonso Davies
+402,Cristiano Ronaldo; Lionel Messi; Jude Bellingham
+403,Cristiano Ronaldo; Rodri; Jude Bellingham
+404,Ninguno; Cristiano Ronaldo; Julián Álvarez
+405,Jude Bellingham; Rodri; Harry Kane
+406,Harry Kane; Lionel Messi; Cristiano Ronaldo
+407,Kylian Mbappé; Lionel Messi; Rodri
+408,Vinícius Júnior; Julián Álvarez; Cristiano Ronaldo
+409,Lamine Yamal; Christian Pulisic; Neymar Jr.
+410,Lionel Messi; Harry Kane; Lamine Yamal
+411,Neymar Jr.; Kylian Mbappé; Jude Bellingham
+412,Lionel Messi; Neymar Jr.; Rodri
+413,Kylian Mbappé; Vinícius Júnior; Neymar Jr.
+414,Vinícius Júnior; Kylian Mbappé; Alphonso Davies
+415,Neymar Jr.; Harry Kane; Christian Pulisic
+416,Jude Bellingham; Harry Kane; Lionel Messi
+417,Julián Álvarez; Cristiano Ronaldo; Vinícius Júnior
+418,Cristiano Ronaldo; Kylian Mbappé; Lionel Messi
+419,Ninguno; Christian Pulisic; Cristiano Ronaldo
+420,Neymar Jr.; Rodri; Cristiano Ronaldo
+421,Cristiano Ronaldo; Rodri; Lionel Messi
+422,Alphonso Davies; Lamine Yamal
+423,Jude Bellingham; Federico Valverde; Vinícius Júnior
+424,Vinícius Júnior; Lamine Yamal; Neymar Jr.
+425,Vinícius Júnior; Neymar Jr.; Alphonso Davies
+426,Vinícius Júnior; Lionel Messi; Lamine Yamal
+427,Lionel Messi; Neymar Jr.; Harry Kane
+428,Kylian Mbappé; Lionel Messi; Federico Valverde
+429,Cristiano Ronaldo; Julián Álvarez; Lionel Messi
+430,Lamine Yamal; Vinícius Júnior; Lionel Messi
+431,Lionel Messi; Cristiano Ronaldo; Federico Valverde
+432,Kylian Mbappé; Ninguno; Lionel Messi
+433,Harry Kane; Lionel Messi; Vinícius Júnior
+434,Cristiano Ronaldo; Lamine Yamal; Jude Bellingham
+435,Cristiano Ronaldo; Kylian Mbappé; Vinícius Júnior
+436,Alphonso Davies; Kylian Mbappé
+437,Lionel Messi; Jude Bellingham; Rodri
+438,Jude Bellingham; Neymar Jr.; Lionel Messi
+439,Kylian Mbappé; Jude Bellingham; Lamine Yamal
+440,Kylian Mbappé; Julián Álvarez; Neymar Jr.
+441,Alphonso Davies; Lionel Messi; Jude Bellingham
+442,Cristiano Ronaldo; Julián Álvarez; Rodri
+443,Julián Álvarez; Neymar Jr.; Kylian Mbappé
+444,Lionel Messi; Vinícius Júnior; Kylian Mbappé
+445,Kylian Mbappé; Vinícius Júnior; Lamine Yamal
+446,Federico Valverde; Jude Bellingham; Lionel Messi
+447,Jude Bellingham; Neymar Jr.; Cristiano Ronaldo
+448,Cristiano Ronaldo; Ninguno; Lionel Messi
+449,Harry Kane; Kylian Mbappé
+450,Vinícius Júnior; Lamine Yamal; Alphonso Davies
+451,Cristiano Ronaldo; Jude Bellingham; Neymar Jr.
+452,Julián Álvarez; Kylian Mbappé
+453,Lamine Yamal; Kylian Mbappé; Cristiano Ronaldo
+454,Neymar Jr.; Federico Valverde; Jude Bellingham
+455,Neymar Jr.; Julián Álvarez; Jude Bellingham
+456,Alphonso Davies; Kylian Mbappé; Lamine Yamal
+457,Cristiano Ronaldo; Kylian Mbappé; Julián Álvarez
+458,Lionel Messi; Kylian Mbappé; Lamine Yamal
+459,Kylian Mbappé; Alphonso Davies; Vinícius Júnior
+460,Alphonso Davies; Cristiano Ronaldo; Neymar Jr.
+461,Kylian Mbappé; Rodri
+462,Lamine Yamal; Cristiano Ronaldo; Neymar Jr.
+463,Vinícius Júnior; Kylian Mbappé; Cristiano Ronaldo
+464,Ninguno; Lionel Messi; Cristiano Ronaldo
+465,Lamine Yamal; Julián Álvarez
+466,Lionel Messi; Federico Valverde; Harry Kane
+467,Cristiano Ronaldo; Christian Pulisic; Jude Bellingham
+468,Lamine Yamal; Harry Kane; Lionel Messi
+469,Rodri; Federico Valverde
+470,Cristiano Ronaldo; Vinícius Júnior; Christian Pulisic
+471,Rodri; Kylian Mbappé; Federico Valverde
+472,Ninguno; Lionel Messi
+473,Jude Bellingham; Ninguno; Cristiano Ronaldo
+474,Cristiano Ronaldo; Neymar Jr.; Vinícius Júnior
+475,Federico Valverde; Jude Bellingham
+476,Alphonso Davies; Neymar Jr.; Kylian Mbappé
+477,Vinícius Júnior; Cristiano Ronaldo; Kylian Mbappé
+478,Christian Pulisic; Julián Álvarez; Jude Bellingham
+479,Cristiano Ronaldo; Jude Bellingham; Lionel Messi
+480,Lamine Yamal; Cristiano Ronaldo; Harry Kane
+481,Christian Pulisic; Lionel Messi; Neymar Jr.
+482,Jude Bellingham; Kylian Mbappé; Neymar Jr.
+483,Lionel Messi; Cristiano Ronaldo; Julián Álvarez
+484,Cristiano Ronaldo; Vinícius Júnior; Lionel Messi
+485,Kylian Mbappé; Lionel Messi; Harry Kane
+486,Kylian Mbappé; Lamine Yamal; Federico Valverde
+487,Neymar Jr.; Lionel Messi; Federico Valverde
+488,Lamine Yamal; Federico Valverde; Christian Pulisic
+489,Alphonso Davies; Jude Bellingham; Ninguno
+490,Harry Kane; Kylian Mbappé; Cristiano Ronaldo
+491,Lionel Messi; Neymar Jr.; Federico Valverde
+492,Cristiano Ronaldo; Lionel Messi; Rodri
+493,Cristiano Ronaldo; Neymar Jr.; Christian Pulisic
+494,Kylian Mbappé; Lionel Messi; Christian Pulisic
+495,Christian Pulisic; Kylian Mbappé; Jude Bellingham
+496,Kylian Mbappé; Julián Álvarez; Lionel Messi
+497,Cristiano Ronaldo; Lionel Messi; Lamine Yamal
+498,Lamine Yamal; Rodri; Neymar Jr.
+499,Christian Pulisic; Jude Bellingham; Cristiano Ronaldo
+500,Lionel Messi; Neymar Jr.; Jude Bellingham
+501,Harry Kane; Alphonso Davies
+502,Vinícius Júnior; Harry Kane; Neymar Jr.
+503,Kylian Mbappé; Harry Kane; Alphonso Davies
+504,Jude Bellingham; Alphonso Davies
+505,Ninguno; Jude Bellingham; Lamine Yamal
+506,Alphonso Davies; Jude Bellingham; Vinícius Júnior
+507,Lionel Messi; Ninguno; Vinícius Júnior
+508,Federico Valverde; Vinícius Júnior; Lionel Messi
+509,Lionel Messi; Cristiano Ronaldo; Harry Kane
+510,Vinícius Júnior; Neymar Jr.; Jude Bellingham
+511,Cristiano Ronaldo; Julián Álvarez; Lamine Yamal
+512,Ninguno; Christian Pulisic
+513,Christian Pulisic; Lamine Yamal; Julián Álvarez
+514,Kylian Mbappé; Lamine Yamal; Vinícius Júnior
+515,Rodri; Cristiano Ronaldo; Neymar Jr.
+516,Kylian Mbappé; Federico Valverde; Ninguno
+517,Alphonso Davies; Julián Álvarez
+518,Jude Bellingham; Rodri; Julián Álvarez
+519,Alphonso Davies; Cristiano Ronaldo; Kylian Mbappé
+520,Vinícius Júnior; Federico Valverde; Julián Álvarez
+521,Vinícius Júnior; Neymar Jr.; Lionel Messi
+522,Christian Pulisic; Ninguno; Kylian Mbappé
+523,Neymar Jr.; Cristiano Ronaldo; Vinícius Júnior
+524,Vinícius Júnior; Cristiano Ronaldo; Rodri
+525,Cristiano Ronaldo; Neymar Jr.; Alphonso Davies
+526,Federico Valverde; Lionel Messi; Vinícius Júnior
+527,Jude Bellingham; Vinícius Júnior; Harry Kane
+528,Vinícius Júnior; Julián Álvarez; Kylian Mbappé
+529,Christian Pulisic; Harry Kane; Jude Bellingham
+530,Neymar Jr.; Lionel Messi; Lamine Yamal
+531,Lionel Messi; Rodri; Vinícius Júnior
+532,Lamine Yamal; Alphonso Davies
+533,Ninguno; Vinícius Júnior; Cristiano Ronaldo
+534,Federico Valverde; Kylian Mbappé; Cristiano Ronaldo
+535,Vinícius Júnior; Lionel Messi; Jude Bellingham
+536,Kylian Mbappé; Jude Bellingham; Cristiano Ronaldo
+537,Christian Pulisic; Lionel Messi; Vinícius Júnior
+538,Julián Álvarez; Rodri; Lamine Yamal
+539,Christian Pulisic; Lamine Yamal
+540,Vinícius Júnior; Neymar Jr.; Federico Valverde
+541,Lamine Yamal; Jude Bellingham; Alphonso Davies
+542,Lamine Yamal; Ninguno; Cristiano Ronaldo
+543,Harry Kane; Alphonso Davies; Cristiano Ronaldo
+544,Federico Valverde; Cristiano Ronaldo; Alphonso Davies
+545,Cristiano Ronaldo; Vinícius Júnior; Lamine Yamal
+546,Lionel Messi; Kylian Mbappé; Vinícius Júnior
+547,Lionel Messi; Lamine Yamal; Vinícius Júnior
+548,Lamine Yamal; Cristiano Ronaldo; Jude Bellingham
+549,Alphonso Davies; Jude Bellingham
+550,Vinícius Júnior; Neymar Jr.; Lamine Yamal
+551,Christian Pulisic; Lionel Messi; Kylian Mbappé
+552,Vinícius Júnior; Christian Pulisic; Lionel Messi
+553,Lamine Yamal; Harry Kane; Vinícius Júnior
+554,Rodri; Kylian Mbappé; Jude Bellingham
+555,Rodri; Vinícius Júnior; Lionel Messi
+556,Vinícius Júnior; Julián Álvarez; Jude Bellingham
+557,Vinícius Júnior; Rodri; Cristiano Ronaldo
+558,Federico Valverde; Cristiano Ronaldo; Harry Kane
+559,Lionel Messi; Lamine Yamal; Neymar Jr.
+560,Christian Pulisic; Vinícius Júnior; Lionel Messi
+561,Julián Álvarez; Kylian Mbappé; Lamine Yamal
+562,Alphonso Davies; Lionel Messi; Vinícius Júnior
+563,Rodri; Neymar Jr.; Cristiano Ronaldo
+564,Kylian Mbappé; Christian Pulisic; Federico Valverde
+565,Cristiano Ronaldo; Neymar Jr.; Harry Kane
+566,Ninguno; Kylian Mbappé; Julián Álvarez
+567,Ninguno; Jude Bellingham
+568,Lamine Yamal; Lionel Messi; Christian Pulisic
+569,Rodri; Vinícius Júnior
+570,Cristiano Ronaldo; Ninguno; Vinícius Júnior
+571,Neymar Jr.; Kylian Mbappé; Julián Álvarez
+572,Jude Bellingham; Kylian Mbappé
+573,Jude Bellingham; Neymar Jr.; Alphonso Davies
+574,Alphonso Davies; Neymar Jr.; Lionel Messi
+575,Neymar Jr.; Federico Valverde; Lamine Yamal
+576,Lionel Messi; Lamine Yamal; Julián Álvarez
+577,Christian Pulisic; Lionel Messi; Cristiano Ronaldo
+578,Julián Álvarez; Neymar Jr.; Lionel Messi
+579,Lamine Yamal; Neymar Jr.; Cristiano Ronaldo
+580,Vinícius Júnior; Julián Álvarez; Lionel Messi
+581,Kylian Mbappé; Federico Valverde; Lamine Yamal
+582,Kylian Mbappé; Neymar Jr.; Julián Álvarez
+583,Lamine Yamal; Lionel Messi; Ninguno
+584,Lionel Messi; Harry Kane; Kylian Mbappé
+585,Cristiano Ronaldo; Harry Kane; Vinícius Júnior
+586,Rodri; Kylian Mbappé; Lamine Yamal
+587,Kylian Mbappé; Harry Kane; Cristiano Ronaldo
+588,Neymar Jr.; Rodri; Christian Pulisic
+589,Ninguno; Lionel Messi; Neymar Jr.
+590,Lionel Messi; Alphonso Davies; Federico Valverde
+591,Vinícius Júnior; Alphonso Davies
+592,Neymar Jr.; Vinícius Júnior; Rodri
+593,Cristiano Ronaldo; Lamine Yamal; Ninguno
+594,Neymar Jr.; Christian Pulisic; Ninguno
+595,Jude Bellingham; Cristiano Ronaldo; Christian Pulisic
+596,Neymar Jr.; Lionel Messi; Jude Bellingham
+597,Vinícius Júnior; Christian Pulisic; Lamine Yamal
+598,Alphonso Davies; Lionel Messi; Julián Álvarez
+599,Lionel Messi; Lamine Yamal; Rodri
+600,Christian Pulisic; Neymar Jr.; Lionel Messi
+601,Julián Álvarez; Lamine Yamal; Alphonso Davies
+602,Ninguno; Neymar Jr.; Lamine Yamal
+603,Vinícius Júnior; Lamine Yamal; Jude Bellingham
+604,Vinícius Júnior; Federico Valverde; Kylian Mbappé
+605,Christian Pulisic; Harry Kane
+606,Neymar Jr.; Christian Pulisic; Jude Bellingham
+607,Alphonso Davies; Cristiano Ronaldo; Lionel Messi
+608,Harry Kane; Kylian Mbappé; Neymar Jr.
+609,Cristiano Ronaldo; Vinícius Júnior; Jude Bellingham
+610,Vinícius Júnior; Jude Bellingham; Christian Pulisic
+611,Christian Pulisic; Cristiano Ronaldo; Lamine Yamal
+612,Neymar Jr.; Vinícius Júnior; Kylian Mbappé
+613,Jude Bellingham; Cristiano Ronaldo; Neymar Jr.
+614,Lamine Yamal; Jude Bellingham; Lionel Messi
+615,Jude Bellingham; Lamine Yamal; Vinícius Júnior
+616,Kylian Mbappé; Jude Bellingham; Neymar Jr.
+617,Neymar Jr.; Vinícius Júnior; Jude Bellingham
+618,Cristiano Ronaldo; Federico Valverde; Lionel Messi
+619,Neymar Jr.; Christian Pulisic; Rodri
+620,Neymar Jr.; Julián Álvarez; Cristiano Ronaldo
+621,Lionel Messi; Harry Kane; Christian Pulisic
+622,Harry Kane; Vinícius Júnior
+623,Lionel Messi; Lamine Yamal; Alphonso Davies
+624,Alphonso Davies; Lionel Messi; Harry Kane
+625,Jude Bellingham; Vinícius Júnior; Kylian Mbappé
+626,Rodri; Neymar Jr.; Federico Valverde
+627,Rodri; Lamine Yamal
+628,Cristiano Ronaldo; Rodri; Alphonso Davies
+629,Ninguno; Cristiano Ronaldo; Federico Valverde
+630,Lionel Messi; Cristiano Ronaldo; Christian Pulisic
+631,Cristiano Ronaldo; Lamine Yamal; Federico Valverde
+632,Neymar Jr.; Rodri; Vinícius Júnior
+633,Cristiano Ronaldo; Kylian Mbappé; Lamine Yamal
+634,Kylian Mbappé; Lamine Yamal; Lionel Messi
+635,Alphonso Davies; Julián Álvarez; Harry Kane
+636,Lionel Messi; Alphonso Davies; Kylian Mbappé
+637,Vinícius Júnior; Alphonso Davies; Ninguno
+638,Jude Bellingham; Lionel Messi; Vinícius Júnior
+639,Kylian Mbappé; Cristiano Ronaldo; Lamine Yamal
+640,Lamine Yamal; Cristiano Ronaldo; Lionel Messi
+641,Alphonso Davies; Ninguno; Neymar Jr.
+642,Ninguno; Cristiano Ronaldo; Vinícius Júnior
+643,Lionel Messi; Kylian Mbappé; Neymar Jr.
+644,Lamine Yamal; Kylian Mbappé; Christian Pulisic
+645,Cristiano Ronaldo; Neymar Jr.; Rodri
+646,Neymar Jr.; Rodri
+647,Neymar Jr.; Jude Bellingham; Alphonso Davies
+648,Lionel Messi; Federico Valverde; Christian Pulisic
+649,Julián Álvarez; Lionel Messi; Lamine Yamal
+650,Alphonso Davies; Lamine Yamal; Christian Pulisic
+651,Federico Valverde; Cristiano Ronaldo; Vinícius Júnior
+652,Rodri; Lionel Messi; Cristiano Ronaldo
+653,Vinícius Júnior; Alphonso Davies; Julián Álvarez
+654,Jude Bellingham; Vinícius Júnior; Neymar Jr.
+655,Neymar Jr.; Vinícius Júnior; Alphonso Davies
+656,Lamine Yamal; Vinícius Júnior; Neymar Jr.
+657,Lionel Messi; Cristiano Ronaldo; Kylian Mbappé
+658,Harry Kane; Ninguno; Lionel Messi
+659,Lamine Yamal; Kylian Mbappé; Jude Bellingham
+660,Harry Kane; Federico Valverde
+661,Vinícius Júnior; Christian Pulisic; Kylian Mbappé
+662,Alphonso Davies; Kylian Mbappé; Cristiano Ronaldo
+663,Lionel Messi; Jude Bellingham; Neymar Jr.
+664,Neymar Jr.; Harry Kane
+665,Neymar Jr.; Lamine Yamal; Lionel Messi
+666,Rodri; Cristiano Ronaldo; Jude Bellingham
+667,Lionel Messi; Jude Bellingham; Harry Kane
+668,Vinícius Júnior; Jude Bellingham; Federico Valverde
+669,Neymar Jr.; Federico Valverde; Lionel Messi
+670,Julián Álvarez; Rodri
+671,Harry Kane; Christian Pulisic
+672,Christian Pulisic; Vinícius Júnior; Lamine Yamal
+673,Neymar Jr.; Kylian Mbappé; Alphonso Davies
+674,Alphonso Davies; Julián Álvarez; Lionel Messi
+675,Lamine Yamal; Vinícius Júnior; Cristiano Ronaldo
+676,Lionel Messi; Rodri; Cristiano Ronaldo
+677,Vinícius Júnior; Kylian Mbappé; Lamine Yamal

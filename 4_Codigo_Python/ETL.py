@@ -64,19 +64,37 @@ def etapa_jonathan_calidad_datos(df):
 
 
 # =====================================================================
-# ESPACIO RESERVADO PARA: NICOLE (ETAPA 1 - REPORTE DE VALORES NULOS)
+# (REPORTE DE VALORES NULOS) Nicole
 # =====================================================================
-# NICOLE: Aquí debes crear tu función para identificar y reportar nulos.
-# Responsabilidades: Buscar nulos, analizar porcentajes y proponer tratamiento.
-# Ejemplo de estructura:
-# def etapa_nicole_calidad_datos(df):
-#     print("--- REPORTE DE VALORES NULOS (Nicole) ---")
-#     # 1. Buscar valores nulos (df.isnull().sum())
-#     # 2. Calcular porcentaje de nulos
-#     # 3. Proponer el tratamiento en el documento/código
-#     pass
-# =====================================================================
-
+def etapa_nicole_calidad_datos(df):
+    """Identifica, cuenta y reportar el porcentaje de valores nulos por columna.
+    
+    Responsable: Nicole
+    """
+    print("\n--- REPORTE DE VALORES NULOS (Nicole) ---")
+    
+    # 1. Buscar valores nulos por columna
+    total_nulos = df.isnull().sum()
+    
+    # 2. Calcular el porcentaje de nulos
+    porcentaje_nulos = (total_nulos / len(df)) * 100
+    
+    # 3. Construir una tabla resumen de nulos
+    tabla_nulos = pd.DataFrame({
+        'Total Nulos': total_nulos,
+        'Porcentaje (%)': porcentaje_nulos.round(2)
+    })
+    
+    # Filtrar para mostrar solo las columnas que tienen nulos
+    columnas_con_nulos = tabla_nulos[tabla_nulos['Total Nulos'] > 0]
+    
+    if len(columnas_con_nulos) > 0:
+        print("Columnas detectadas con valores faltantes:")
+        print(columnas_con_nulos)
+        print("\n💡 Propuesta de tratamiento: Se mantendrán durante el ETL para evitar la pérdida masiva de datos, usando .dropna() de forma controlada al armar las dimensiones lógicas.")
+    else:
+        print("✅ ¡Perfecto! No se detectaron valores nulos en ninguna columna del dataset.")
+    print("\n" + "="*50 + "\n")
 
 # ==========================================
 # ETAPA 2 - LIMPIEZA DE DATOS (ETL)
@@ -111,17 +129,33 @@ def etapa_eu_limpieza(df):
 
 
 # =====================================================================
-# ESPACIO RESERVADO PARA: NICOLE (ETAPA 2 - ESTANDARIZACIÓN DE TEXTO)
-# =====================================================================
-# NICOLE: Aquí debes crear tu función para estandarizar formatos de texto.
-# Debe aplicar .str.title() para convertir 'masculino'/'MASCULINO' en 'Masculino'.
-# Ejemplo de estructura:
-# def etapa_nicole_estandarizacion_texto(df):
-#     df_estandar = df.copy()
-#     # Tu código aquí (Ej: df_estandar['Genero'] = df_estandar['Genero'].str.title())
-#     return df_estandar
+# NICOLE (ETAPA 2 - ESTANDARIZACIÓN DE TEXTO)
 # =====================================================================
 
+def etapa_nicole_estandarizacion_texto(df):
+    """Estandariza los formatos de texto de las columnas categóricas usando .str.title().
+    
+    Responsable: Nicole
+    """
+    print("\n--- INICIO DE ESTANDARIZACIÓN DE TEXTO (Nicole) ---")
+    df_estandar = df.copy()
+    
+    # Columnas principales que necesitan un formato uniforme
+    columnas_a_estandarizar = [
+        'Genero', 'Departamento', 'Municipio', 'Ocupacion', 
+        'FrecuenciaConsumo', 'LugarCompra', 'CompaniaPartidos', 
+        'SnackFavorito', 'SaborPreferido', 'PresentacionIdeal'
+    ]
+    
+    columnas_procesadas = 0
+    for col in columnas_a_estandarizar:
+        if col in df_estandar.columns:
+            # Convertir a texto, aplicar formato Tipo Título y rellenar nulos si aplica
+            df_estandar[col] = df_estandar[col].astype(str).str.title()
+            columnas_procesadas += 1
+            
+    print(f"-> Formato (.str.title()) aplicado con éxito en {columnas_procesadas} columnas categóricas.")
+    return df_estandar
 
 # --- PARTICIPACIÓN: JONATHAN (ETAPA 2) ---
 def etapa_jonathan_validacion_final(df_original, df_limpio):
@@ -159,19 +193,18 @@ if __name__ == "__main__":
         # Reporte inicial de Jonathan (Duplicados e Inconsistencias)
         etapa_jonathan_calidad_datos(df_original)
         
-        # LLAMADA DE NICOLE ETAPA 1 (Descomentar cuando Nicole cree su función):
-        # etapa_nicole_calidad_datos(df_original)
+        # Reporte de calidad de datos Nicole
+        etapa_nicole_calidad_datos(df_original)
 
         # 2. EJECUCIÓN - ETAPA 2 (Limpieza ETL)
         # Paso 2.1: Eliminación de duplicados y espacios (Eu)
         df_limpio_eu = etapa_eu_limpieza(df_original)
         
-        # PASO 2.2: LLAMADA DE NICOLE ETAPA 2 (Descomentar cuando Nicole cree su función):
-        # df_limpio_final = etapa_nicole_estandarizacion_texto(df_limpio_eu)
+        # PASO 2.2: LLAMADA DE NICOLE ETAPA 2 
+        df_limpio_final = etapa_nicole_estandarizacion_texto(df_limpio_eu)
         
         # Variable de control para definir qué DataFrame se exportará y validará
-        # NOTA: Cambiar 'df_limpio_eu' por 'df_limpio_final' cuando Nicole integre su función.
-        df_a_exportar = df_limpio_eu
+        df_a_exportar = df_limpio_final
 
         # =====================================================================
         # EXPORTACIÓN DEL DATASET PARA DESBLOQUEAR LA ETAPA 3
