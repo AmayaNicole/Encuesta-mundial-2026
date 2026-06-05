@@ -6,13 +6,9 @@ import pandas as pd
 # =====================================================================
 
 # --- RESPONSABLE: EU (ETAPAS 3 Y 4 - DIMENSIONES DEMOGRÁFICAS) ---
-def construir_dimensiones_demograficas(df_limpio):
-    """Genera las tablas de dimensiones demográficas con sus respectivas claves primarias.
-    
-    Responsable: Eu
-    """
+def construir_dimensiones_demograficas(df_limpio, ruta_salida):
+    """Genera las tablas de dimensiones demográficas con sus respectivas claves primarias."""
     print("--- CONSTRUYENDO DIMENSIONES DEMOGRÁFICAS (Eu) ---")
-    ruta_salida = "3_Tablas_Limpias/"
     os.makedirs(ruta_salida, exist_ok=True)
     
     # 1. Dim_Edad
@@ -49,30 +45,26 @@ def construir_dimensiones_demograficas(df_limpio):
 
 
 # --- RESPONSABLE: JONATHAN (ETAPAS 3 Y 4 - DIMENSIONES DE MARKETING) ---
-def construir_dimensiones_marketing(df_limpio):
-    """Genera las tablas de dimensiones orientadas a marketing y publicidad.
-    
-    Responsable: Jonathan
-    """
+def construir_dimensiones_marketing(df_limpio, ruta_salida):
+    """Genera las tablas de dimensiones orientadas a marketing y publicidad."""
     print("\n--- CONSTRUYENDO DIMENSIONES DE MARKETING (Jonathan) ---")
-    ruta_salida = "3_Tablas_Limpias/"
     os.makedirs(ruta_salida, exist_ok=True)
     
-    # 1. Dim_Seleccion (Ajustado a 'SeleccionApoya' según estructura real)
+    # 1. Dim_Seleccion
     col_seleccion = 'SeleccionApoya' if 'SeleccionApoya' in df_limpio.columns else 'Seleccion_Apoyo'
     dim_seleccion = pd.DataFrame(df_limpio[col_seleccion].dropna().unique(), columns=['Seleccion'])
     dim_seleccion.insert(0, 'ID_Seleccion', range(1, 1 + len(dim_seleccion)))
     dim_seleccion.to_csv(os.path.join(ruta_salida, "Dim_Seleccion.csv"), index=False)
     print("✅ Dim_Seleccion.csv generada.")
 
-    # 2. Dim_Jugador (Ajustado a 'JugadoresInfluyentes' según estructura real)
+    # 2. Dim_Jugador
     col_jugador = 'JugadoresInfluyentes' if 'JugadoresInfluyentes' in df_limpio.columns else 'Jugador_Motivacion'
     dim_jugador = pd.DataFrame(df_limpio[col_jugador].dropna().unique(), columns=['Jugador'])
     dim_jugador.insert(0, 'ID_Jugador', range(1, 1 + len(dim_jugador)))
     dim_jugador.to_csv(os.path.join(ruta_salida, "Dim_Jugador.csv"), index=False)
     print("✅ Dim_Jugador.csv generada.")
 
-    # 3. Dim_Promocion (Ajustado a 'PromocionPreferida' según estructura real)
+    # 3. Dim_Promocion
     dim_promocion = pd.DataFrame(df_limpio['PromocionPreferida'].dropna().unique(), columns=['Tipo_Promocion'])
     dim_promocion.insert(0, 'ID_Promocion', range(1, 1 + len(dim_promocion)))
     dim_promocion.to_csv(os.path.join(ruta_salida, "Dim_Promocion.csv"), index=False)
@@ -81,24 +73,12 @@ def construir_dimensiones_marketing(df_limpio):
     return dim_seleccion, dim_jugador, dim_promocion
 
 
-# =====================================================================
-# ESPACIO RESERVADO PARA: NICOLE (RESPONSABLE PRINCIPAL ETAPAS 3 Y 4)
-# =====================================================================
-# NICOLE: Aquí debes incluir el diseño y construcción de las dimensiones 
-# restantes y la integración final de la Tabla de Hechos (Fact Table).
-# =====================================================================
 # --- RESPONSABLE: NICOLE (DIMENSIONES DE CONSUMO Y TIEMPO) ---
-# --- RESPONSABLE: NICOLE (DIMENSIONES DE CONSUMO Y TIEMPO) ---
-def construir_dimensiones_consumo(df_limpio):
-    """Genera las tablas de dimensiones orientadas al consumo de snacks y tiempo.
-    
-    Responsable: Nicole
-    """
+def construir_dimensiones_consumo(df_limpio, ruta_salida):
+    """Genera las tablas de dimensiones orientadas al consumo de snacks y tiempo."""
     print("\n--- CONSTRUYENDO DIMENSIONES DE CONSUMO Y TIEMPO (Nicole) ---")
-    ruta_salida = "3_Tablas_Limpias/"
     os.makedirs(ruta_salida, exist_ok=True)
 
-    # CORRECCIÓN: Nombres exactos basados en la estructura del df_limpio
     columnas_consumo = {
         'FrecuenciaConsumoSnacks': ('Dim_Frecuencia.csv', 'ID_Frecuencia'),
         'LugarCompraSnacks': ('Dim_LugarCompra.csv', 'ID_LugarCompra'),
@@ -116,7 +96,7 @@ def construir_dimensiones_consumo(df_limpio):
         print(f"✅ {archivo} generada.")
         tablas_generadas.append(dim_df)
 
-    # CORRECCIÓN: Dimensión de Tiempo usando 'FechaEncuesta'
+    # Dimensión de Tiempo
     col_tiempo = 'FechaEncuesta' if 'FechaEncuesta' in df_limpio.columns else None
     if col_tiempo:
         dim_tiempo = pd.DataFrame(df_limpio[col_tiempo].dropna().unique(), columns=[col_tiempo])
@@ -133,13 +113,10 @@ def construir_dimensiones_consumo(df_limpio):
 
 def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni, dim_ocupacion, 
                            dim_seleccion, dim_jugador, dim_promocion,
-                           dim_frecuencia, dim_lugar, dim_compania, dim_snack, dim_sabor, dim_presentacion, dim_tiempo):
-    """Une el dataset limpio con todas las dimensiones para generar la Fact Table central.
-    
-    Responsable: Nicole
-    """
+                           dim_frecuencia, dim_lugar, dim_compania, dim_snack, dim_sabor, dim_presentacion, dim_tiempo,
+                           ruta_salida):
+    """Une el dataset limpio con todas las dimensiones para generar la Fact Table central."""
     print("\n--- CONSTRUYENDO TABLA DE HECHOS CENTRAL (Nicole) ---")
-    ruta_salida = "3_Tablas_Limpias/"
     fact = df_limpio.copy()
     
     # Cruces demográficos (Eu)
@@ -156,7 +133,7 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
     fact = fact.merge(dim_jugador, left_on=col_jug, right_on='Jugador', how='left')
     fact = fact.merge(dim_promocion, left_on='PromocionPreferida', right_on='Tipo_Promocion', how='left')
     
-    # CORRECCIÓN: Cruces de consumo con nombres reales
+    # Cruces de consumo (Nicole)
     fact = fact.merge(dim_frecuencia, on='FrecuenciaConsumoSnacks', how='left')
     fact = fact.merge(dim_lugar, on='LugarCompraSnacks', how='left')
     fact = fact.merge(dim_compania, on='ConQuienVePartidos', how='left')
@@ -164,14 +141,14 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
     fact = fact.merge(dim_sabor, on='SaborPreferido', how='left')
     fact = fact.merge(dim_presentacion, on='PresentacionPreferida', how='left')
     
-    # CORRECCIÓN: Cruce de tiempo
+    # Cruce de tiempo
     col_tiempo = 'FechaEncuesta' if 'FechaEncuesta' in fact.columns else None
     if col_tiempo and col_tiempo in dim_tiempo.columns:
         fact = fact.merge(dim_tiempo, on=col_tiempo, how='left')
     else:
         fact['ID_Tiempo'] = 1
 
-    # CORRECCIÓN: Filtrado final de columnas lógicas (Cambiando Precio_Aceptado por PrecioAdecuado)
+    # Filtrado final de columnas lógicas
     columnas_fact = [
         'ID_Edad', 'ID_Genero', 'ID_Departamento', 'ID_Municipio', 'ID_Ocupacion',
         'ID_Seleccion', 'ID_Jugador', 'ID_Promocion',
@@ -181,6 +158,8 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
     
     fact_table = fact[columnas_fact]
     fact_table.insert(0, 'ID_Encuesta', range(1, 1 + len(fact_table)))
+    
+    # Guardamos en la ruta proporcionada (3_Tablas_Limpias)
     fact_table.to_csv(os.path.join(ruta_salida, "Fact_Encuestas.csv"), index=False)
     print("✅ Fact_Encuestas.csv generada con éxito. ¡Modelo Star Schema completo!")
     
@@ -189,13 +168,11 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
 # ==========================================
 # BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
 # ==========================================
-# ==========================================
-# BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
-# ==========================================
 if __name__ == "__main__":
-    # Ruta del dataset limpio generado en la Etapa 2
+    # Configuramos las rutas dinámicas para que funcionen sin importar desde dónde se abra VS Code
     directorio_actual = os.path.dirname(os.path.abspath(__file__))
-    RUTA_DATASET_LIMPIO = os.path.join(directorio_actual, "..", "3_Tablas_Limpias", "dataset_limpio.csv")
+    RUTA_TABLAS_LIMPIAS = os.path.join(directorio_actual, "..", "3_Tablas_Limpias")
+    RUTA_DATASET_LIMPIO = os.path.join(RUTA_TABLAS_LIMPIAS, "dataset_limpio.csv")
 
     if not os.path.exists(RUTA_DATASET_LIMPIO):
         print(f"Error: No se encontró el dataset limpio en: {RUTA_DATASET_LIMPIO}")
@@ -205,21 +182,20 @@ if __name__ == "__main__":
         df_limpio = pd.read_csv(RUTA_DATASET_LIMPIO)
         print(f"Dataset limpio cargado correctamente. Registros a procesar: {len(df_limpio)}\n")
 
-        # Ejecución del pipeline de construcción (Etapa 4)
+        # 1. Ejecución de Eu (Pasando la ruta de guardado)
+        dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion = construir_dimensiones_demograficas(df_limpio, RUTA_TABLAS_LIMPIAS)
         
-        # 1. Ejecución de Eu (¡AQUÍ ATRAPAMOS LAS VARIABLES!)
-        dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion = construir_dimensiones_demograficas(df_limpio)
-        
-        # 2. Ejecución de la parte de Jonathan (¡AQUÍ ATRAPAMOS LAS VARIABLES!)
-        dim_seleccion, dim_jugador, dim_promocion = construir_dimensiones_marketing(df_limpio)
+        # 2. Ejecución de la parte de Jonathan (Pasando la ruta de guardado)
+        dim_seleccion, dim_jugador, dim_promocion = construir_dimensiones_marketing(df_limpio, RUTA_TABLAS_LIMPIAS)
 
-        # 3. Flujo de Nicole 
-        dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem = construir_dimensiones_consumo(df_limpio)
+        # 3. Flujo de Nicole (Pasando la ruta de guardado)
+        dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem = construir_dimensiones_consumo(df_limpio, RUTA_TABLAS_LIMPIAS)
 
-        # 4. Construcción final de la Tabla de Hechos
+        # 4. Construcción final de la Tabla de Hechos (Pasando la ruta de guardado)
         fact_encuestas = construir_tabla_hechos(
             df_limpio, 
             dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion,
             dim_seleccion, dim_jugador, dim_promocion,
-            dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem
+            dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem,
+            RUTA_TABLAS_LIMPIAS
          )
