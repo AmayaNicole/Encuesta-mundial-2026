@@ -88,6 +88,7 @@ def construir_dimensiones_marketing(df_limpio):
 # restantes y la integración final de la Tabla de Hechos (Fact Table).
 # =====================================================================
 # --- RESPONSABLE: NICOLE (DIMENSIONES DE CONSUMO Y TIEMPO) ---
+# --- RESPONSABLE: NICOLE (DIMENSIONES DE CONSUMO Y TIEMPO) ---
 def construir_dimensiones_consumo(df_limpio):
     """Genera las tablas de dimensiones orientadas al consumo de snacks y tiempo.
     
@@ -97,14 +98,14 @@ def construir_dimensiones_consumo(df_limpio):
     ruta_salida = "3_Tablas_Limpias/"
     os.makedirs(ruta_salida, exist_ok=True)
 
-    # Crear dimensiones de consumo en un bucle limpio
+    # CORRECCIÓN: Nombres exactos basados en la estructura del df_limpio
     columnas_consumo = {
-        'FrecuenciaConsumo': ('Dim_Frecuencia.csv', 'ID_Frecuencia'),
-        'LugarCompra': ('Dim_LugarCompra.csv', 'ID_LugarCompra'),
-        'CompaniaPartidos': ('Dim_CompaniaPartidos.csv', 'ID_CompaniaPartidos'),
-        'SnackFavorito': ('Dim_Snacks.csv', 'ID_Snack'),
+        'FrecuenciaConsumoSnacks': ('Dim_Frecuencia.csv', 'ID_Frecuencia'),
+        'LugarCompraSnacks': ('Dim_LugarCompra.csv', 'ID_LugarCompra'),
+        'ConQuienVePartidos': ('Dim_CompaniaPartidos.csv', 'ID_CompaniaPartidos'),
+        'SnacksSeleccionados': ('Dim_Snacks.csv', 'ID_Snack'),
         'SaborPreferido': ('Dim_Sabor.csv', 'ID_Sabor'),
-        'PresentacionIdeal': ('Dim_Presentacion.csv', 'ID_Presentacion')
+        'PresentacionPreferida': ('Dim_Presentacion.csv', 'ID_Presentacion')
     }
     
     tablas_generadas = []
@@ -115,12 +116,12 @@ def construir_dimensiones_consumo(df_limpio):
         print(f"✅ {archivo} generada.")
         tablas_generadas.append(dim_df)
 
-    # Dimensión de Tiempo
-    col_tiempo = 'Timestamp' if 'Timestamp' in df_limpio.columns else ('Fecha' if 'Fecha' in df_limpio.columns else None)
+    # CORRECCIÓN: Dimensión de Tiempo usando 'FechaEncuesta'
+    col_tiempo = 'FechaEncuesta' if 'FechaEncuesta' in df_limpio.columns else None
     if col_tiempo:
         dim_tiempo = pd.DataFrame(df_limpio[col_tiempo].dropna().unique(), columns=[col_tiempo])
     else:
-        dim_tiempo = pd.DataFrame(['2026-06-01'], columns=['Fecha'])
+        dim_tiempo = pd.DataFrame(['2026-06-01'], columns=['FechaEncuesta'])
     
     dim_tiempo.insert(0, 'ID_Tiempo', range(1, 1 + len(dim_tiempo)))
     dim_tiempo.to_csv(os.path.join(ruta_salida, "Dim_Tiempo.csv"), index=False)
@@ -155,27 +156,27 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
     fact = fact.merge(dim_jugador, left_on=col_jug, right_on='Jugador', how='left')
     fact = fact.merge(dim_promocion, left_on='PromocionPreferida', right_on='Tipo_Promocion', how='left')
     
-    # Cruces de consumo (Nicole)
-    fact = fact.merge(dim_frecuencia, on='FrecuenciaConsumo', how='left')
-    fact = fact.merge(dim_lugar, on='LugarCompra', how='left')
-    fact = fact.merge(dim_compania, on='CompaniaPartidos', how='left')
-    fact = fact.merge(dim_snack, on='SnackFavorito', how='left')
+    # CORRECCIÓN: Cruces de consumo con nombres reales
+    fact = fact.merge(dim_frecuencia, on='FrecuenciaConsumoSnacks', how='left')
+    fact = fact.merge(dim_lugar, on='LugarCompraSnacks', how='left')
+    fact = fact.merge(dim_compania, on='ConQuienVePartidos', how='left')
+    fact = fact.merge(dim_snack, on='SnacksSeleccionados', how='left')
     fact = fact.merge(dim_sabor, on='SaborPreferido', how='left')
-    fact = fact.merge(dim_presentacion, on='PresentacionIdeal', how='left')
+    fact = fact.merge(dim_presentacion, on='PresentacionPreferida', how='left')
     
-    # Cruce de tiempo
-    col_tiempo = 'Timestamp' if 'Timestamp' in fact.columns else ('Fecha' if 'Fecha' in fact.columns else None)
+    # CORRECCIÓN: Cruce de tiempo
+    col_tiempo = 'FechaEncuesta' if 'FechaEncuesta' in fact.columns else None
     if col_tiempo and col_tiempo in dim_tiempo.columns:
         fact = fact.merge(dim_tiempo, on=col_tiempo, how='left')
     else:
         fact['ID_Tiempo'] = 1
 
-    # Filtrado final de columnas lógicas
+    # CORRECCIÓN: Filtrado final de columnas lógicas (Cambiando Precio_Aceptado por PrecioAdecuado)
     columnas_fact = [
         'ID_Edad', 'ID_Genero', 'ID_Departamento', 'ID_Municipio', 'ID_Ocupacion',
         'ID_Seleccion', 'ID_Jugador', 'ID_Promocion',
         'ID_Frecuencia', 'ID_LugarCompra', 'ID_CompaniaPartidos', 'ID_Snack', 'ID_Sabor', 'ID_Presentacion',
-        'ID_Tiempo', 'Precio_Aceptado'
+        'ID_Tiempo', 'PrecioAdecuado'
     ]
     
     fact_table = fact[columnas_fact]
@@ -185,6 +186,9 @@ def construir_tabla_hechos(df_limpio, dim_edad, dim_genero, dim_depto, dim_muni,
     
     return fact_table
 
+# ==========================================
+# BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
+# ==========================================
 # ==========================================
 # BLOQUE PRINCIPAL DE EJECUCIÓN (MAIN)
 # ==========================================
@@ -202,20 +206,20 @@ if __name__ == "__main__":
         print(f"Dataset limpio cargado correctamente. Registros a procesar: {len(df_limpio)}\n")
 
         # Ejecución del pipeline de construcción (Etapa 4)
-        # 1. Ejecución de tu parte (Eu)
+        
+        # 1. Ejecución de Eu (¡AQUÍ ATRAPAMOS LAS VARIABLES!)
         dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion = construir_dimensiones_demograficas(df_limpio)
-        # 2. Ejecución de la parte de Jonathan
+        
+        # 2. Ejecución de la parte de Jonathan (¡AQUÍ ATRAPAMOS LAS VARIABLES!)
         dim_seleccion, dim_jugador, dim_promocion = construir_dimensiones_marketing(df_limpio)
 
-        # 3. Flujo de Nicole (A ser integrado por ella)
-        # Aquí Nicole llamará a sus funciones para completar el Star Schema:
-        # construir_dimensiones_consumo(df_limpio)
-        # construir_tabla_hechos(df_limpio, ...)
+        # 3. Flujo de Nicole 
         dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem = construir_dimensiones_consumo(df_limpio)
 
+        # 4. Construcción final de la Tabla de Hechos
         fact_encuestas = construir_tabla_hechos(
             df_limpio, 
             dim_edad, dim_genero, dim_departamento, dim_municipio, dim_ocupacion,
             dim_seleccion, dim_jugador, dim_promocion,
             dim_frec, dim_lug, dim_comp, dim_snk, dim_sab, dim_pres, dim_tiem
-         )       
+         )
